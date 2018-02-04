@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [03/Feb/2018:21:28:02 +0800] "GET /file/testEn.action HTTP/1.1" 200 26 http-bio-80-exec-1 1685
+0:0:0:0:0:0:0:1 - - [03/Feb/2018:21:55:00 +0800] "OPTIONS /file/upLoadOne.action HTTP/1.1" 200 9194 http-bio-80-exec-1 679

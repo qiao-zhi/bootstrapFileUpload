@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 配置常量 -->
+	<!-- 字符集 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<!-- 开发模式 -->
+	<constant name="struts.devMode" value="false"></constant>
+	<!-- 扩展名 -->
+	<constant name="struts.action.extension" value="action"></constant>
+
+
+
+	<!-- 通用package -->
+	<package name="file" namespace="/" extends="struts-default,json-default">
+
+		<global-results>
+			<result name="success" type="json"></result>
+		</global-results>
+		
+		<!--测试struts环境是否搭建成功 -->
+		<action name="testEn" class="cn.qlq.fileupload.TestEn"></action>
+		
+		<!-- 测试上传单个文件 -->
+		<action name="upLoadOne" class="cn.qlq.fileupload.OneFileUpAction"></action>
+		
+		<!-- 测试上传多个文件 -->
+		<action name="upLoadMultiple" class="cn.qlq.fileupload.MultipleFileUpAction"></action>
+
+	</package>
+</struts>
